@@ -1,8 +1,9 @@
 body {
-	background-color: darkgray;
+	background-color: rgb(47,79,79);
 }
 
 p {
 	color: white;
 	text-align: center;
+	font-weight: bold;
 }
