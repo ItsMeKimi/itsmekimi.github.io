@@ -1,0 +1,131 @@
+I"9
+<p><br /><br /><br /><br /></p>
+
+<section class="jumbo">
+    <div class="main-div">
+        <h1>
+            BuildingBloCS<br />
+            <span class="huge">2022</span>
+        </h1>
+	<p>
+        <a class="btn brand" href="/about/about-us/">Learn about BuildingBloCS</a>
+	</p>
+		<h2>Our events</h2>
+	    <p>Find out more about our <a href="/events/june-conference/">Flagship June Conference!</a></p>
+	    <h2>Other external programmes</h2>
+	    <p><a href="https://codingcompetitions.withgoogle.com/kickstart">Google Kickstart</a> registration is open!</p>
+	    <p><a href="https://for.edu.sg/bebrasdrctds">Bebras, DrCT and NM High School Data Science assessment/contests</a> are free for students in Singapore schools!</p> 
+    <br /><br /><br /><br /><br /><br /><br />
+    </div>
+</section>
+
+<h2 id="theme-computational-thinking-ai-and-blockchain-education">Theme: Computational Thinking, AI and Blockchain Education</h2>
+
+<p>With the increasing importance of Computing education and AI literacy globally as well as disruptive emerging blockchain technologies, this year’s focus areas will be on Computational Thinking, Artificial Intelligence and Blockchain Education!</p>
+
+<p>Learn about <a href="https://www.youtube.com/watch?v=KI3INCiyst8&amp;t=905s">Introduction to Blockchain by TZAPAC</a>, official industry partner of <a href="https://noisg.comp.nus.edu.sg/noi/">National Olympiad in Informatics 2022</a>.</p>
+
+<h2 id="organisers">Organisers</h2>
+
+<section class="organisers">
+    
+    <a href="https://acjc.moe.edu.sg/">
+        <img src="/assets/img/sch/acjc.png" title="Anglo-Chinese Junior College" />
+    </a>
+    
+    <a href="https://dunmanhigh.moe.edu.sg/">
+        <img src="/assets/img/sch/dhs.png" title="Dunman High School" />
+    </a>
+    
+    <a href="http://www.hwachong.edu.sg/">
+        <img src="/assets/img/sch/hci.png" title="Hwa Chong Institution" />
+    </a>
+    
+    <a href="https://jpjc.moe.edu.sg/">
+        <img src="/assets/img/sch/jpjc.png" title="Jurong Pioneer Junior College" />
+    </a>
+    
+    <a href="https://nationaljc.moe.edu.sg/">
+        <img src="/assets/img/sch/njc.png" title="National Junior College" />
+    </a>
+    
+    <a href="https://nanyangjc.moe.edu.sg/">
+        <img src="/assets/img/sch/nyjc.png" title="Nanyang Junior College" />
+    </a>
+    
+    <a href="https://www.nyp.edu.sg/">
+        <img src="/assets/img/sch/nyp.png" title="Nanyang Polytechnic" />
+    </a>
+    
+    <a href="https://www.nushigh.edu.sg/">
+        <img src="/assets/img/sch/nushs.png" title="NUS High School" />
+    </a>
+    
+    <a href="http://www.ri.edu.sg/">
+        <img src="/assets/img/sch/ri.png" title="Raffles Institution" />
+    </a>
+    
+    <a href="https://rivervalleyhigh.moe.edu.sg/">
+        <img src="/assets/img/sch/rvjc.png" title="River Valley Junior College" />
+    </a>
+    
+    <a href="https://www.temasekjc.moe.edu.sg/">
+        <img src="/assets/img/sch/tjc.png" title="Temasek Junior College" />
+    </a>
+    
+    <a href="https://victoriajc.moe.edu.sg/">
+        <img src="/assets/img/sch/vjc.png" title="Victoria Junior College" />
+    </a>
+    
+    <a href="https://yijc.moe.edu.sg/">
+        <img src="/assets/img/sch/yijc.png" title="Yishun Innova Junior College" />
+    </a>
+    
+</section>
+
+<h2 id="partners">Partners</h2>
+
+<section class="organisers">
+    
+    <a href="https://fossasia.org/">
+        <img src="/assets/img/partner/fossasia.png" title="FOSSASIA" />
+    </a>
+    
+    <a href="https://www.google.com/">
+        <img src="/assets/img/partner/google.png" title="Google" />
+    </a>
+    
+    <a href="https://www.moe.gov.sg/">
+        <img src="/assets/img/partner/moe.png" title="Ministry of Education, Singapore" />
+    </a>
+    
+    <a href="https://www.aisingapore.org/">
+        <img src="/assets/img/partner/aisingapore.png" title="AISingapore" />
+    </a>
+    
+    <a href="https://pugs.org.sg/">
+        <img src="/assets/img/partner/pyusergrp.png" title="Python User Group Singapore" />
+    </a>
+    
+    <a href="http://thegirlcode.co/">
+        <img src="/assets/img/partner/thegirlcode.png" title="The Girl Code" />
+    </a>
+    
+    <a href="https://www.comp.nus.edu.sg/">
+        <img src="/assets/img/partner/nussoc.png" title="NUS School of Computing" />
+    </a>
+    
+    <a href="https://classdo.com/en/">
+        <img src="/assets/img/partner/classdo.PNG" title="ClassDo" />
+    </a>
+    
+    <a href="https://simcc.org">
+        <img src="/assets/img/partner/simcc.png" title="SIMCC" />
+    </a>
+    
+    <a href="https://www.cyberyouth.sg/">
+        <img src="/assets/img/partner/cys.png" title="Cyber Youth Singapore" />
+    </a>
+    
+</section>
+:ET
