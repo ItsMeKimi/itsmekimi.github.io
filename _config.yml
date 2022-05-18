@@ -8,7 +8,7 @@ includes_dir: _includes
 # For polyglot
 # See: https://github.com/untra/polyglot
 # Note the American English.
-languages: ["en", "jp", "zh"]
+languages: ["en", "ja", "zh"]
 default_lang: "en"
 exclude_from_localization: [_data, _includes, _layouts, _plugins, _site, "javascript", "images", "css", "sass"]
 parallel_localization: true

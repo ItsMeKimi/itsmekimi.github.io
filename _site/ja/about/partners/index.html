@@ -7,18 +7,18 @@
 
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500|Source+Sans+Pro:400,400i,700,700i">
-    <link rel="stylesheet" href="/jp/assets/icomoon/style.css">
-    <link rel="stylesheet" href="/jp/assets/css/style.css">
+    <link rel="stylesheet" href="/ja/assets/icomoon/style.css">
+    <link rel="stylesheet" href="/ja/assets/css/style.css">
 
     <meta name="theme-color" content="#8a0303">
-    <link rel="icon" href="/jp/assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="/jp/assets/img/touch.png">
+    <link rel="icon" href="/ja/assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="/ja/assets/img/touch.png">
     <script src="https://kit.fontawesome.com/97baa51800.js" crossorigin="anonymous"></script>
 
-    <meta http-equiv="Content-Language" content="jp">
-<link rel="alternate" hreflang="en" href="http://localhost:4000/about/partners/"/>
-<link rel="alternate" hreflang="jp" href="http://localhost:4000/jp/about/partners/"/>
-<link rel="alternate" hreflang="zh" href="http://localhost:4000/zh/about/partners/"/>
+    <meta http-equiv="Content-Language" content="ja">
+<link rel="alternate" hreflang="en" href="/ja/about/partners/"/>
+<link rel="alternate" hreflang="ja" href="/ja/about/partners/"/>
+<link rel="alternate" hreflang="zh" href="/zh/about/partners/"/>
 
 </head>
 
@@ -27,7 +27,7 @@
     <form class="navigation-wrapper">
 	<nav class="navigation">
 		<div class="brand">
-			<a href="/jp/" title="Home">
+			<a href="/ja/" title="Home">
 				<i class="logo icon" aria-hidden="true">logo</i>
 				<span class="name">BuildingBloCS</span>
 			</a>
@@ -36,21 +36,21 @@
 		<input id="menu" type="checkbox" />
 
 		<ul class="links">
-			<li class="link"><a href="/jp/join-us">Join Us</a></li>
+			<li class="link"><a href="/ja/join-us">Join Us</a></li>
 			<li class="link dropdown">
 				<a>Events</a>
 				<i class="fa fa-caret-down"></i>
 				<div class="dropdown-content">
 					
-					<a href="/jp/events/june-conference">June Conference</a>
+					<a href="/ja/events/june-conference">June Conference</a>
 			<li class="link dropdown">
 				<a>About</a>
 				<i class="fa fa-caret-down"></i>
 				<div class="dropdown-content">
-					<a href="/jp/about/about-us">About Us</a>
-					<a href="/jp/about/bbcs-youtube">BuildingBloCS Youtube</a>
-					<a href="/jp/about/contact">Contact</a>
-					<a href="/jp/about/partners">Partners</a>
+					<a href="/ja/about/about-us">About Us</a>
+					<a href="/ja/about/bbcs-youtube">BuildingBloCS Youtube</a>
+					<a href="/ja/about/contact">Contact</a>
+					<a href="/ja/about/partners">Partners</a>
 				</div>
 			</li>
 		</ul>
@@ -175,16 +175,16 @@ Interested to become a partner? Contact <a href="mailto:hello@buildingblocs.sg">
     <footer class="footer">
         <div class="column">
             <div class="group">
-                <a href="/jp/"><i class="icon" aria-hidden="true" style="font-size: 10rem">logo</i></a>
+                <a href="/ja/"><i class="icon" aria-hidden="true" style="font-size: 10rem">logo</i></a>
             </div>
         </div>
         <div class="column" id="centre-this">
             <div class="group">
                 <ul class="links">
-                    <li class="link"><a href="/jp/join-us/">Join Us</a></li>
-                    <li class="link"><a href="/jp/about/contact">Contact</a></li>
-                    <li class="link"><a href="/jp/about/partners">Partners</a></li>
-                    <li class="link"><a href="/jp/past-years">Past Years</a></li>
+                    <li class="link"><a href="/ja/join-us/">Join Us</a></li>
+                    <li class="link"><a href="/ja/about/contact">Contact</a></li>
+                    <li class="link"><a href="/ja/about/partners">Partners</a></li>
+                    <li class="link"><a href="/ja/past-years">Past Years</a></li>
                 </ul>
             </div>
             <div class="group">
@@ -199,7 +199,8 @@ Interested to become a partner? Contact <a href="mailto:hello@buildingblocs.sg">
                     
                         
                             <a
-                            href="
+                            onclick = 'changeLocalStorage("en")'
+                            href = "
                             
                                 /about/partners/
                             "
@@ -208,16 +209,18 @@ Interested to become a partner? Contact <a href="mailto:hello@buildingblocs.sg">
                     
                         
                             <a style="font-weight: bold;"
-                            href="
+                            onclick = 'changeLocalStorage("ja")'
+                            href = "
                             
-                                /jp/about/partners/
+                                /ja/about/partners/
                             "
-                            >jp</a>
+                            >ja</a>
                         
                     
                         
                             <a
-                            href="
+                            onclick = 'changeLocalStorage("zh")'
+                            href = "
                             
                                 /zh/about/partners/
                             "
@@ -233,6 +236,124 @@ Interested to become a partner? Contact <a href="mailto:hello@buildingblocs.sg">
 
     <script src="/assets/js/navigation.js"></script>
 
+    <script>
+        let acceptedLanguages = []
+    </script>
+
+    
+    <script>
+        acceptedLanguages.push("en")
+    </script>
+    
+    <script>
+        acceptedLanguages.push("ja")
+    </script>
+    
+    <script>
+        acceptedLanguages.push("zh")
+    </script>
+    
+
+    <script>
+        // Get the 2 digit Language Code of the current browser locale
+        function getLanguageCode() {
+            let languageString = navigator.language;
+            let languageCode = languageString.substring(0,2);
+
+            return languageCode.toString()
+        }
+
+        // Check if this 2 digit Language Code is supported
+        function checkLanguageCode(twodigitlang) {
+            twodigitlang = twodigitlang.toString()
+            for (let i=0; i < acceptedLanguages.length; i++) {
+                if (twodigitlang == acceptedLanguages[i]) {
+                    return twodigitlang
+                }
+            }
+            
+            return "en"
+        }
+
+        // Check if there is a stored locale in the browsers localStorage
+        function checkLocalStorage() {
+            if (localStorage.getItem('i18n_locale') === null) {
+                // localStorage key does not exist, go ahead to select locale from browser
+                let newLocale = checkLanguageCode(getLanguageCode());
+
+                // Store this newLocale in localStorage for future use
+                localStorage.setItem('i18n_locale', newLocale.toString());
+                
+                console.log("localStorage key of i18n_locale set to value: ".concat(newLocale.toString()));
+                return [0, newLocale.toString()]
+
+            } else {
+                // localStorage key exists, get that locale value from localStorage
+                let localStorageLocale = localStorage.getItem('i18n_locale');
+
+                return [1, localStorageLocale.toString()]
+            }
+        }
+
+        // Check if the user has a key in the sessionStorage to run only once.
+        function checkSessionStorage() {
+            if (sessionStorage.getItem('loadedOnce') === null) { // If it does not exist, make it exist
+                sessionStorage.setItem('loadedOnce', 'True');
+
+                return "False"
+            } else {
+                return "True"
+            }
+        }
+
+        // Change the value of the stored locale in the browsers localStorage if the user (on their given locale)
+        // decides to switch to a different locale instead
+        function changeLocalStorage(newValue) { // newValue is a string.
+            localStorage.setItem('i18n_locale', newValue)
+        }
+
+        // Since the english page is default and directly runs off , where other locale sites run off 
+        // /jp/ or /zh/ for example. This gives the resulting string, e.g. zh -> "zh/"
+        function giveLocale(lang) {
+            if (lang === "en") {
+                return ""
+            } else {
+                return "/".concat(lang);
+            }
+        }
+
+        // To be ran on window.load()
+        function changeLanguageOnLoad() {
+            let checkedLocalStorage = checkLocalStorage();
+
+            if (checkLocalStorage[0] === 0) { // localStorage value does not exist
+                let newLocale = checkedLocalStorage[1];
+                let addToRedirect = giveLocale(getLanguageCode());
+
+                // Redirect to page with new locale
+                redirectUser(addToRedirect);
+            } else { // localStorage value exists
+                let localeFromStorage = checkedLocalStorage[1];
+                let addToRedirect = giveLocale(localeFromStorage);
+
+                // Redirect to page with new locale
+                redirectUser(addToRedirect);
+            }
+        }
+
+        // Handles the actual redirecting
+        function redirectUser(addToRedirect) {
+            let redirectLink = addToRedirect.concat("/about/partners/");
+            window.location.href = "".concat(redirectLink);
+        }
+
+        if (checkSessionStorage() === "False") { // Can run
+            window.onload = changeLanguageOnLoad();
+        } 
+
+    </script>
 </body>
 
 </html>
+
+
